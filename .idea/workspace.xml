@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56e7c667-52db-4c83-adef-7e76e381c38c" name="Changes" comment="Initial commit PNX Load Board">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749573113998</updated>
-      <workItem from="1749573116790" duration="1933000" />
+      <workItem from="1749573116790" duration="9279000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit PNX Load Board">
       <option name="closed" value="true" />
