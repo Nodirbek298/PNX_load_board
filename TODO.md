@@ -10,8 +10,8 @@
     - [x] Select authentication method - **Decided: JWT**
     - [x] Choose deployment platform - **Decided: Local Server**
 - [ ] **System Design**
-  - [ ] Create system architecture diagram
-  - [ ] Design database schema
+  - [x] Create system architecture diagram
+  - [x] Design database schema
   - [ ] Define API specification
   - [ ] Create UI wireframes
 
