@@ -9,11 +9,11 @@
     - [x] Choose frontend framework - **Decided: React with TypeScript**
     - [x] Select authentication method - **Decided: JWT**
     - [x] Choose deployment platform - **Decided: Local Server**
-- [ ] **System Design**
+- [x] **System Design**
   - [x] Create system architecture diagram
   - [x] Design database schema
-  - [ ] Define API specification
-  - [ ] Create UI wireframes
+  - [x] Define API specification
+  - [x] Create UI wireframes
 
 ### Research Tasks
 - [ ] Research major load boards and their APIs:

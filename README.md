@@ -23,8 +23,8 @@ It will be implemented with python backed restful api with a web frontend.
 ## Phase 1.2 - System Design
 - [x] Design system architecture diagram
 - [x] Design initial database schema
-- [ ] Define API endpoints specification
-- [ ] Create wireframes for main UI components
+- [x] Define API endpoints specification
+- [x] Create wireframes for main UI components
 
 # Milestone 2 - Environment Setup & Foundation
 

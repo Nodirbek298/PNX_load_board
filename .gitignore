@@ -1,0 +1,8 @@
+# Ignore everything except markdown files
+*
+!*.md
+!.gitignore
+!*/
+!**/*.md
+/WIREFRAMES.md
+/API_SPECIFICATION.md
