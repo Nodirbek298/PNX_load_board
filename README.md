@@ -10,41 +10,123 @@ PNX Load Board - Web application to help dispatchers fetch loads from all availa
 - RESTful API
 - [Frontend framework TBD]
 
-# Milestone 1 - Initial planning
+# Milestone 1 - Initial Planning & Architecture
 It will be implemented with python backed restful api with a web frontend.
-- [ ] Decide on database type (SQL, NoSQL)
+
+## Phase 1.1 - Technology Stack Decision
+- [x] Decide on database type (SQL, NoSQL) - **Decided: PostgreSQL**
+- [x] Choose backend framework - **Decided: FastAPI**
+- [x] Choose frontend framework - **Decided: React with TypeScript**
+- [x] Select authentication method - **Decided: JWT**
+- [x] Choose deployment platform - **Decided: Local Server**
+
+## Phase 1.2 - System Design
+- [ ] Design system architecture diagram
 - [ ] Design initial database schema
-- [ ] Choose frontend framework (React, Angular, React native if mobile app is needed)
-# Milestone 2 - Environment setup
-- [ ] Setup server for the project
-- [ ] Configure server environment (Python, dependencies)
-- [ ] Initialize database
-- [ ] Setup frontend framework
+- [ ] Define API endpoints specification
+- [ ] Create wireframes for main UI components
+
+# Milestone 2 - Environment Setup & Foundation
+
+## Phase 2.1 - Backend Setup
+- [ ] Setup FastAPI project structure
+- [ ] Configure virtual environment and dependencies (requirements.txt)
+- [ ] Setup PostgreSQL database
+- [ ] Implement database connection and ORM (SQLAlchemy)
+- [ ] Create initial database models
+- [ ] Setup environment configuration .env file
+- [ ] Implement basic health check endpoint
+
+## Phase 2.2 - Frontend Setup
+- [ ] Initialize React TypeScript project
+- [ ] Setup project structure and folder organization
+- [ ] Configure build tools and linting
+- [ ] Setup routing
+- [ ] Configure state management
+- [ ] Setup UI component library
+
+## Phase 2.3 - Development Environment
+- [ ] Setup local development environment
 - [ ] Implement basic load fetching functionality
 
-# Milestone 3 - Web Application Development
-- [ ] Implement user authentication
-- [ ] Implement load filtering and sorting
-- [ ] Implement bidding for ad hoc loads
-- [ ] Implement load history and dashboard
-- [ ] Implement notifications new loads for new loads
+# Milestone 3 - Core Application Development
 
-# Milestone 4 - Deployment
-- [ ] Deploy application to server
-- [ ] Set up logging and monitoring tools
-- [ ] Monitor application performance and fix bugs
-- [ ] Gather user feedback and iterate on features
-- [ ] Implement additional features based on user feedback
-- [ ] Optimize performance and scalability
+## Phase 3.1 - Authentication & User Management
+- [ ] Implement user registration and login API endpoints
+- [ ] Setup JWT token generation and validation
+- [ ] Create user profile management
+- [ ] Implement password reset functionality
+- [ ] Build login/register UI components
 
-# Ongoing Development & Maintenance
+## Phase 3.2 - Load Board Integration
+- [ ] Implement load fetching services for major load boards
+- [ ] Setup scheduled load fetching jobs
+- [ ] Implement load caching
+
+## Phase 3.3 - Core Features
+- [ ] Implement load listing
+- [ ] Build advanced filtering and sorting functionality
+  - [ ] By location (origin/destination)
+  - [ ] By deahead
+  - [ ] By posting date
+- [ ] Create load detail view with all information
+- [ ] Implement bidding system for ad hoc loads
+- [ ] Build load history and dashboard
+- [ ] Add load bookmarking functionality
+
+## Phase 3.4 - Notifications & Real-time Features
+- [ ] Implement WebSocket connections for real-time updates
+- [ ] Create notification system for new loads
+- [ ] Implement browser push notifications
+
+# Milestone 4 - Testing, Optimization & Deployment
+
+## Phase 4.1 - Testing & Quality Assurance
+- [ ] Perform load testing for high traffic scenarios
+- [ ] Conduct security testing and vulnerability assessment
+- [ ] User acceptance testing with real dispatchers
+
+## Phase 4.2 - Performance Optimization
+- [ ] Optimize database queries and indexing
+- [ ] Optimize frontend bundle size and loading times
+
+## Phase 4.3 - Local Server Deployment
+- [ ] Setup local server infrastructure
+- [ ] Configure local database with backups
+- [ ] Setup monitoring tools
+- [ ] Configure logging
+- [ ] Deploy application locally
+
+## Phase 4.4 - Launch Preparation
+- [ ] Create user documentation and guides
+- [ ] Prepare training materials for dispatchers
+- [ ] Setup feedback channels
+
+# Milestone 5 - Post-Launch & Continuous Improvement
+
+## Phase 5.1 - User Feedback & Iteration
+- [ ] Gather user feedback
+- [ ] Prioritize feature requests and improvements
+- [ ] Monitor system performance and reliability
+
+## Phase 5.2 - Feature Expansion
 - [ ] Add support for additional load boards & email load postings
-- [ ] Regularly update dependencies and load fetching logic
+- [ ] Auto adding loads to PCS
+- [ ] Add load tracking and status updates
+
+## Phase 5.3 - Maintenance & Operations
+- [ ] Regularly update dependencies
 - [ ] Monitor for bugs and performance issues
-- [ ] Continuously improve based on feedback
+- [ ] Maintain and improve load fetching logic
+- [ ] Database maintenance and optimization
+- [ ] Backup verification and testing
 
 # Future Enhancements
-- [ ] Auto emailing to brokers from the load board
-- [ ] Consider implementing a mobile app version
-- [ ] Explore AI/ML for load matching and recommendations
+- [ ] **Mobile App Development**: React Native or Flutter mobile app
+- [ ] **Enhanced Automation**:
+  - [ ] Auto emailing to brokers from the load board
+  - [ ] Smart notification filtering
+- [ ] **Ai Features**:
+  - [ ] AI-powered load suggestions
+  - [ ] Natural language processing for load queries
 
