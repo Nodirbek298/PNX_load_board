@@ -21,8 +21,8 @@ It will be implemented with python backed restful api with a web frontend.
 - [x] Choose deployment platform - **Decided: Local Server**
 
 ## Phase 1.2 - System Design
-- [ ] Design system architecture diagram
-- [ ] Design initial database schema
+- [x] Design system architecture diagram
+- [x] Design initial database schema
 - [ ] Define API endpoints specification
 - [ ] Create wireframes for main UI components
 
