@@ -17,24 +17,24 @@
 
 ### Research Tasks
 - [ ] Research major load boards and their APIs:
-  - [ ] DAT Load Board
+  - [x] DAT Load Board
   - [ ] Truckstop.com
-  - [ ] Fedex Freight Bids
+  - [x] Fedex Freight Bids
   - [ ] Others
 
 ## 📋 Backlog
 
 ### Backend Development
 - [ ] Setup FastAPI project structure
-- [ ] Implement database models
-- [ ] Create authentication system
+- [x] Implement database models
+- [x] Create authentication system
 - [ ] Build load fetching services
 - [ ] Implement filtering and search
 - [ ] Add caching layer
 - [ ] Setup background jobs
 
 ### Frontend Development
-- [ ] Initialize React TypeScript project
+- [x] Initialize React TypeScript project
 - [ ] Setup component library
 - [ ] Build authentication pages
 - [ ] Create load listing views

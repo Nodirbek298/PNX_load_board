@@ -30,15 +30,15 @@ It will be implemented with python backed restful api with a web frontend.
 
 ## Phase 2.1 - Backend Setup
 - [ ] Setup FastAPI project structure
-- [ ] Configure virtual environment and dependencies (requirements.txt)
-- [ ] Setup PostgreSQL database
-- [ ] Implement database connection and ORM (SQLAlchemy)
-- [ ] Create initial database models
-- [ ] Setup environment configuration .env file
-- [ ] Implement basic health check endpoint
+- [x] Configure virtual environment and dependencies (requirements.txt)
+- [x] Setup PostgreSQL database
+- [x] Implement database connection and ORM (SQLAlchemy)
+- [x] Create initial database models
+- [x] Setup environment configuration .env file
+- [x] Implement basic health check endpoint
 
 ## Phase 2.2 - Frontend Setup
-- [ ] Initialize React TypeScript project
+- [x] Initialize React TypeScript project
 - [ ] Setup project structure and folder organization
 - [ ] Configure build tools and linting
 - [ ] Setup routing
