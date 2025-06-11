@@ -39,21 +39,21 @@ It will be implemented with python backed restful api with a web frontend.
 
 ## Phase 2.2 - Frontend Setup
 - [x] Initialize React TypeScript project
-- [ ] Setup project structure and folder organization
-- [ ] Configure build tools and linting
-- [ ] Setup routing
+- [x] Setup project structure and folder organization
+- [x] Configure build tools and linting
+- [x] Setup routing
 - [ ] Configure state management
 - [ ] Setup UI component library
 
 ## Phase 2.3 - Development Environment
-- [ ] Setup local development environment
-- [ ] Implement basic load fetching functionality
+- [x] Setup local development environment
+- [x] Implement basic load fetching functionality
 
 # Milestone 3 - Core Application Development
 
 ## Phase 3.1 - Authentication & User Management
-- [ ] Implement user registration and login API endpoints
-- [ ] Setup JWT token generation and validation
+- [x] Implement user registration and login API endpoints
+- [x] Setup JWT token generation and validation
 - [ ] Create user profile management
 - [ ] Implement password reset functionality
 - [ ] Build login/register UI components
