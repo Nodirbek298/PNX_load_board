@@ -60,80 +60,183 @@ graph TB
 ```mermaid
 erDiagram
     USERS {
-        int id PK
-        string username UK
-        string email UK
-        string password_hash
+        int user_id PK
         string first_name
         string last_name
-        string role
+        string email UK
+        string phone
+        string hashed_password
+        string role "user or admin"
         boolean is_active
         timestamp created_at
         timestamp updated_at
     }
-      LOADS {
-        int id PK
-        string load_number UK
-        boolean is_bid
+    
+    LOADS {
+        int load_id PK
+        string external_load_id UK
+        string source_board "DAT, Truckstop, etc"
         string origin_city
         string origin_state
         string origin_zip
-        string origin_address
+        text origin_address
         string destination_city
         string destination_state
         string destination_zip
-        string destination_address
-        decimal rate
-        string equipment_type
-        decimal weight
-        decimal distance
-        text description
+        text destination_address
+        string equipment_type "VAN, REF, FLAT, etc"
+        float length "feet"
+        float weight "pounds"
+        float rate "total rate"
+        float rate_per_mile
+        float miles
         timestamp pickup_date
         timestamp delivery_date
-        timestamp posted_at
+        timestamp posted_date
+        timestamp expires_date
         string broker_name
+        string broker_mc_number
         string broker_email
         string broker_phone
-        string mc_number
-        string load_board_source
+        string commodity
+        text description
+        text special_requirements
         boolean is_active
         timestamp created_at
         timestamp updated_at
     }
     
     BID_LOADS {
-        int id PK
-        int load_id FK
+        int bid_id PK
         int user_id FK
-        decimal bid_amount
+        int load_id FK
+        float bid_amount
+        string bid_status "PENDING, ACCEPTED, REJECTED, EXPIRED"
+        string contact_name
+        string contact_email
+        string contact_phone
         text notes
-        string status
-        string user_name
-        string user_email
-        string user_phone
+        timestamp response_deadline
         timestamp created_at
         timestamp updated_at
     }
     
     USER_PREFERENCES {
-        int id PK
+        int preference_id PK
         int user_id FK
-        json filter_preferences
-        json notification_settings
+        text preferred_states "JSON array"
+        int max_deadhead_miles
+        text preferred_equipment "JSON array"
+        float min_rate
+        float max_rate
+        float min_rate_per_mile
+        float max_weight
+        float max_length
+        boolean email_notifications
+        boolean browser_notifications
+        boolean sms_notifications
+        string notification_frequency "IMMEDIATE, HOURLY, DAILY"
         timestamp created_at
         timestamp updated_at
     }
-      NOTIFICATIONS {
-        int id PK
+    
+    NOTIFICATIONS {
+        int notification_id PK
         int user_id FK
-        string type
         string title
         text message
+        string notification_type "NEW_LOAD, BID_UPDATE, SYSTEM"
         boolean is_read
+        boolean is_sent
+        int related_load_id FK
+        int related_bid_id FK
         timestamp created_at
-    }    USERS ||--o{ BID_LOADS : "places"
-    USERS ||--o{ USER_PREFERENCES : "has"
-    USERS ||--o{ NOTIFICATIONS : "receives"
+        timestamp updated_at
+    }
     
-    LOADS ||--o{ BID_LOADS : "receives"
+    SAVED_SEARCHES {
+        int search_id PK
+        int user_id FK
+        string name
+        string origin
+        string destination
+        int radius
+        string equipment
+        timestamp pickup_date_from
+        timestamp pickup_date_to
+        float rate_min
+        float rate_max
+        float weight_max
+        float length_max
+        text search_filters_json "additional filters"
+        timestamp created_at
+        timestamp updated_at
+        timestamp last_used
+    }
+    
+    EMAIL_ACCOUNTS {
+        int id PK
+        int user_id FK
+        string email_address
+        string account_type "outlook"
+        text access_token
+        text refresh_token
+        timestamp token_expires_at
+        boolean is_active
+        timestamp created_at
+        timestamp updated_at
+    }
+    
+    EMAIL_OFFERS {
+        int id PK
+        string message_id
+        text subject
+        string receiver
+        timestamp received_at
+        boolean is_load_offer
+        decimal confidence_score
+        string load_type
+        boolean is_team_load
+        string equipment_type
+        string weight
+        decimal rate
+        string rate_type
+        int miles
+        string commodity
+        text special_requirements
+        timestamp pickup_date
+        timestamp delivery_date
+        string broker_name
+        string broker_email
+        string broker_phone
+        string broker_mc_number
+        timestamp created_at
+        timestamp updated_at
+    }
+    
+    EMAIL_LOAD_STOPS {
+        int id PK
+        int email_offer_id FK
+        int stop_sequence
+        string city
+        string state
+        string zip_code
+        string stop_type
+        timestamp scheduled_date
+        text special_instructions
+        timestamp created_at
+    }
+    
+    USERS ||--o{ BID_LOADS : "places bids"
+    USERS ||--|| USER_PREFERENCES : "has preferences"
+    USERS ||--o{ NOTIFICATIONS : "receives"
+    USERS ||--o{ SAVED_SEARCHES : "creates"
+    USERS ||--o{ EMAIL_ACCOUNTS : "owns"
+    
+    LOADS ||--o{ BID_LOADS : "receives bids"
+    LOADS ||--o{ NOTIFICATIONS : "generates"
+    
+    BID_LOADS ||--o{ NOTIFICATIONS : "triggers"
+    
+    EMAIL_OFFERS ||--o{ EMAIL_LOAD_STOPS : "contains"
 ```
