@@ -25,11 +25,11 @@
 ## 📋 Backlog
 
 ### Backend Development
-- [ ] Setup FastAPI project structure
+- [x] Setup FastAPI project structure
 - [x] Implement database models
 - [x] Create authentication system
 - [ ] Build load fetching services
-- [ ] Implement filtering and search
+- [x] Implement filtering and search
 - [ ] Add caching layer
 - [ ] Setup background jobs
 
@@ -37,7 +37,7 @@
 - [x] Initialize React TypeScript project
 - [ ] Setup component library
 - [x] Build authentication pages
-- [ ] Create load listing views
+- [x] Create load listing views
 - [ ] Implement filtering interface
 - [x] Add real-time updates
 - [ ] Build dashboard

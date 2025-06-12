@@ -56,7 +56,7 @@ It will be implemented with python backed restful api with a web frontend.
 - [x] Setup JWT token generation and validation
 - [ ] Create user profile management
 - [ ] Implement password reset functionality
-- [ ] Build login/register UI components
+- [x] Build login/register UI components
 
 ## Phase 3.2 - Load Board Integration
 - [ ] Implement load fetching services for major load boards
@@ -64,15 +64,15 @@ It will be implemented with python backed restful api with a web frontend.
 - [ ] Implement load caching
 
 ## Phase 3.3 - Core Features
-- [ ] Implement load listing
+- [x] Implement load listing
 - [ ] Build advanced filtering and sorting functionality
-  - [ ] By location (origin/destination)
-  - [ ] By deahead
+  - [ ] By location (origin/destination) on the works
+  - [ ] By deahead 
   - [ ] By posting date
-- [ ] Create load detail view with all information
+- [x] Create load detail view with all information
 - [ ] Implement bidding system for ad hoc loads
-- [ ] Build load history and dashboard
-- [ ] Add load bookmarking functionality
+- [x] Build load history and dashboard
+- [x] Add load bookmarking functionality
 
 ## Phase 3.4 - Notifications & Real-time Features
 - [ ] Implement WebSocket connections for real-time updates
@@ -124,7 +124,7 @@ It will be implemented with python backed restful api with a web frontend.
 # Future Enhancements
 - [ ] **Mobile App Development**: React Native or Flutter mobile app
 - [ ] **Enhanced Automation**:
-  - [ ] Auto emailing to brokers from the load board
+  - [ ] Auto emailing to brokers from the load board // ON THE WORKS!
   - [ ] Smart notification filtering
 - [ ] **Ai Features**:
   - [ ] AI-powered load suggestions
