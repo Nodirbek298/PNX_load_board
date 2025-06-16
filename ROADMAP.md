@@ -4,8 +4,8 @@
 
 ```
 Phase 1: Planning & Architecture       ████████████████████
-Phase 2: Environment Setup             ░░░░░░░░░░░░░░░░░░░░
-Phase 3: Core Development              ░░░░░░░░░░░░░░░░░░░░
+Phase 2: Environment Setup             ████████████████████
+Phase 3: Core Development              █████░░░░░░░░░░░░░░░
 Phase 4: Testing & Deployment          ░░░░░░░░░░░░░░░░░░░░
 Phase 5: Launch & Iteration            ░░░░░░░░░░░░░░░░░░░░
 ```

@@ -29,7 +29,7 @@ It will be implemented with python backed restful api with a web frontend.
 # Milestone 2 - Environment Setup & Foundation
 
 ## Phase 2.1 - Backend Setup
-- [ ] Setup FastAPI project structure
+- [x] Setup FastAPI project structure
 - [x] Configure virtual environment and dependencies (requirements.txt)
 - [x] Setup PostgreSQL database
 - [x] Implement database connection and ORM (SQLAlchemy)
@@ -42,7 +42,7 @@ It will be implemented with python backed restful api with a web frontend.
 - [x] Setup project structure and folder organization
 - [x] Configure build tools and linting
 - [x] Setup routing
-- [ ] Configure state management
+- [x] Configure state management
 - [ ] Setup UI component library
 
 ## Phase 2.3 - Development Environment
@@ -54,20 +54,20 @@ It will be implemented with python backed restful api with a web frontend.
 ## Phase 3.1 - Authentication & User Management
 - [x] Implement user registration and login API endpoints
 - [x] Setup JWT token generation and validation
-- [ ] Create user profile management
-- [ ] Implement password reset functionality
+- [x] Create user profile management
+- [x] Implement password reset functionality
 - [x] Build login/register UI components
 
 ## Phase 3.2 - Load Board Integration
 - [ ] Implement load fetching services for major load boards
 - [ ] Setup scheduled load fetching jobs
-- [ ] Implement load caching
+- [x] Implement load caching
 
 ## Phase 3.3 - Core Features
 - [x] Implement load listing
 - [ ] Build advanced filtering and sorting functionality
-  - [ ] By location (origin/destination) on the works
-  - [ ] By deahead 
+  - [x] By location (origin/destination) on the works
+  - [x] By deahead 
   - [ ] By posting date
 - [x] Create load detail view with all information
 - [ ] Implement bidding system for ad hoc loads
